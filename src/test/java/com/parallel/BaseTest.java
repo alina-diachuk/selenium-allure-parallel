@@ -1,5 +1,6 @@
 package com.parallel;
 
+import com.framework.utils.Constants;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.After;
 import org.junit.Before;
@@ -29,7 +30,7 @@ public abstract class BaseTest {
         wait = new WebDriverWait(wd,10);
 
         tlDriver.set(wd);
-        wd.get("https://iopscience.iop.org/bookList/10/1");
+        wd.get(Constants.URL);
     }
 
     @After
